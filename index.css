@@ -1,0 +1,51 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    margin-inline: 2rem;
+}
+
+.title-container {
+    margin-bottom: 30px;
+}
+
+.card-container::before {
+    display: flex;
+}
+
+.card-container {
+    display: grid;
+    width: fit-content;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 25vw);
+    grid-column: initial;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgb(190, 190, 190);
+}
+
+.card-title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.result-container {
+    margin-top: 10px;
+    overflow: auto;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: auto;
+    }
+}
